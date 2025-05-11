@@ -1,18 +1,20 @@
-
-public abstract class Animal
+namespace C__with_DSA_abs
 {
-    public abstract void MakeSound();
-
-    public void Sleep()
+    public abstract class Animal
     {
-        Console.WriteLine("Sleeping ");
+        public abstract void MakeSound();
+
+        public void Sleep()
+        {
+            Console.WriteLine("Sleeping ");
+        }
     }
-}
 
-public class Dog : Animal
-{
-    public override void MakeSound()
+    public class Dog : Animal
     {
-        Console.WriteLine("Woof");
+        public override void MakeSound()
+        {
+            Console.WriteLine("Woof");
+        }
     }
 }
